@@ -15,6 +15,8 @@ function runAnalysis() {
       numberCorrect ++;
     }
   }
+
+  console.log('Accuracy: ', numberCorrect / testSetSize);
 }
 
 function knn(data, point) {
