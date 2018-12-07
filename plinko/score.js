@@ -24,8 +24,8 @@ function knn(data) {
     .value();
 }
 
-function distance(point) {
-	return Math.abs(point - predictionPoint);
+function distance(pointA, pointB) {
+	return Math.abs(pointA - pointB);
 }
 
 function splitDataset(data, testCount) {
