@@ -1,4 +1,3 @@
-const predictionPoint = 300;
 const k = 3;
 const outputs = [];
 
