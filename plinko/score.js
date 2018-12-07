@@ -6,6 +6,7 @@ function onScoreUpdate(dropPosition, bounciness, size, bucketLabel) {
 }
 
 function runAnalysis() {
+  const [testSet, trainingSet] = splitDataset(outputs, 10);
 }
 
 function knn(data, point) {
