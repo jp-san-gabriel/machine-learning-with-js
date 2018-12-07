@@ -25,3 +25,7 @@ function runAnalysis() {
 function distance(point) {
 	return Math.abs(point - predictionPoint);
 }
+
+function splitDataset(data, testCount) {
+  
+}
