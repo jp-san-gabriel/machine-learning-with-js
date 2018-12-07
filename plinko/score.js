@@ -20,6 +20,8 @@ function runAnalysis() {
     .first()
     .parseInt()
     .value();
+
+  console.log('Your point will probably fall into', bucket);
 }
 
 function distance(point) {
