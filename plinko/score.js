@@ -9,7 +9,7 @@ function onScoreUpdate(dropPosition, bounciness, size, bucketLabel) {
 }
 
 function runAnalysis() {
-  _.chain(outputs)
+  const bucket = _.chain(outputs)
     .map(row => [distance(row[0]), row[3]])
     .sortBy(row => row[0])
     .slice(0, k)
