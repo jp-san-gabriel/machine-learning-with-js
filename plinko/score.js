@@ -9,3 +9,7 @@ function onScoreUpdate(dropPosition, bounciness, size, bucketLabel) {
 function runAnalysis() {
   // Write code here to analyze stuff
 }
+
+function distance(point) {
+	return Math.abs(point - predictionPoint);
+}
