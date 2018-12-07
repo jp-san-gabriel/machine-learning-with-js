@@ -6,7 +6,6 @@ function onScoreUpdate(dropPosition, bounciness, size, bucketLabel) {
 }
 
 function runAnalysis() {
-  console.log('Your point will probably fall into', bucket);
 }
 
 function knn(data, point) {
