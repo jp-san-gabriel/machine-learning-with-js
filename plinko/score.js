@@ -27,5 +27,6 @@ function distance(point) {
 }
 
 function splitDataset(data, testCount) {
+  const shuffled = _.shuffle(data);
   
 }
