@@ -1,4 +1,3 @@
-const k = 3;
 const outputs = [];
 
 function onScoreUpdate(dropPosition, bounciness, size, bucketLabel) {
