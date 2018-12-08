@@ -18,7 +18,7 @@ function runAnalysis() {
   });
 }
 
-function knn(data, point) {
+function knn(data, point, k) {
   return _.chain(data)
     .map(row => [distance(row[0], point), row[3]])
     .sortBy(row => row[0])
