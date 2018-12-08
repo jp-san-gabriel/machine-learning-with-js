@@ -8,12 +8,14 @@ function runAnalysis() {
   const testSetSize = 10;
   const [testSet, trainingSet] = splitDataset(outputs, testSetSize);
 
-  accuracy = _.chain(testSet)
-    .filter(testPoint => knn(trainingSet, testPoint[0]) === testPoint[3])
-    .size()
-    .divide(testSetSize)
-    .value();
-  console.log('Accuracy is', accuracy);
+  _.range(1, 15).forEach(k => {
+    accuracy = _.chain(testSet)
+      .filter(testPoint => knn(trainingSet, testPoint[0]) === testPoint[3], k)
+      .size()
+      .divide(testSetSize)
+      .value();
+    console.log('Accuracy is', accuracy);
+  });
 }
 
 function knn(data, point) {
